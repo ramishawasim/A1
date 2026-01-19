@@ -3,6 +3,7 @@
     height: 90px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    font-size: 18px;
     text-decoration: none;
 
     display: flex;
@@ -26,11 +27,32 @@ a:hover{
 }
 #header{
     margin-left: 20px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 }
 #buton{
     width: 80px;
     height:35px;
     margin-right: 20px;
+}
+hr{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#title>h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    text-decoration: none;
+    text-align: center;
+}
+#title>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+}
+#title{
+    margin-top: 120px;
 }
