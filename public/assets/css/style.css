@@ -36,7 +36,7 @@ a:hover{
     margin-right: 20px;
 }
 hr{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 #title>h2{
     font-family: "Inter", sans-serif;
@@ -60,18 +60,20 @@ hr{
     position: relative;
     overflow: hidden;
     padding: 50px; 
+    margin-top: -5px;
+    
 }
 #bg::after{
     content: '';
     position: absolute;
-    width: 1376.0297616065034px;
-    height: 767.9069692797068px;
+    width: 1376px;
+    height: 768px;
     background: #FFEAA7;
-    border-radius: 99px 50%;
-    top: -723px;
-    right: 670px;
+    border-radius: 99px;
+    top: -623px;
+    right: 570px;
     z-index: -1;
-    rotate: 45 deg;
+    transform: rotate(45deg);
     top: -50%; /* change value as required */
     right: -20%; /* change value as required */
 }
@@ -79,11 +81,100 @@ hr{
     position: absolute;
     width: 209px;
     height: 285px;
-    top: 114px;
-    left: 1231px;
+    top: 20px;
+    left: 1725px;
    
 }
 #main{
     width: 100%;
     display: flex;
+  
+}
+#grid{
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    
+
+    box-sizing: border-box;
+    
+    /* set up grid */
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(4, 300px);
+
+    grid-template-areas: 
+    "img1 img2 img2 img3 img3"
+    "img4 img2 img2 img5 img6"
+    "img4 img7 img8 img8 img9"
+    "img10 img7 img8 img8";
+
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.galleryItem{
+  overflow: hidden;
+  /* position: relative; */
+  border: 1px solid black;
+}
+.galleryItem:nth-child(1){
+    grid-area: img1;
+}
+
+.galleryItem:nth-child(2){
+    grid-area: img2;
+}
+.galleryItem:nth-child(3){
+    grid-area: img3;
+    
+}
+.galleryItem:nth-child(4){
+    grid-area: img4;
+
+}
+.galleryItem:nth-child(5){
+    grid-area: img5;
+    
+}
+.galleryItem:nth-child(6){
+    grid-area: img6;
+    
+}
+.galleryItem:nth-child(7){
+    grid-area: img7;
+    
+}
+.galleryItem:nth-child(8){
+    grid-area: img8;
+    
+}
+.galleryItem:nth-child(9){
+    grid-area: img9;
+}
+.galleryItem:nth-child(10){
+    grid-area: img10;
+}
+.galleryItem >img {
+    width: 100%;
+    transform-origin: center;
+}
+.galleryItem >h2{
+    width: 100%;
+    height:40px;
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    text-align: left;
+
+    padding: 20px 0px 10px 30px;
+    
+    transform: translateX(-50%);
+
+    /* text */
+    color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+
+
+    transition: all 1s ease;
 }
