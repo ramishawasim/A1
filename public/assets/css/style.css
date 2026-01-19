@@ -56,3 +56,34 @@ hr{
 #title{
     margin-top: 120px;
 }
+#bg {
+    position: relative;
+    overflow: hidden;
+    padding: 50px; 
+}
+#bg::after{
+    content: '';
+    position: absolute;
+    width: 1376.0297616065034px;
+    height: 767.9069692797068px;
+    background: #FFEAA7;
+    border-radius: 99px 50%;
+    top: -723px;
+    right: 670px;
+    z-index: -1;
+    rotate: 45 deg;
+    top: -50%; /* change value as required */
+    right: -20%; /* change value as required */
+}
+#dots{
+    position: absolute;
+    width: 209px;
+    height: 285px;
+    top: 114px;
+    left: 1231px;
+   
+}
+#main{
+    width: 100%;
+    display: flex;
+}
