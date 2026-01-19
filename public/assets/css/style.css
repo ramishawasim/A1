@@ -1,0 +1,36 @@
+#head{
+    width: 100vw;
+    height: 90px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:80px;
+}
+#navi{
+    display: flex;
+    /* justify-content: space-between; */
+    /* text-decoration: none; */
+    gap:40px;
+    color: #6C5CE7;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    font-weight: 700;
+}
+#header{
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+#buton{
+    width: 80px;
+    height:35px;
+    margin-right: 20px;
+}
