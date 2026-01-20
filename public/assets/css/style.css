@@ -71,16 +71,16 @@ hr{
 #bg::after{
     content: '';
     position: absolute;
-    width: 1376px;
-    height: 768px;
+    width: 976px;
+    height: 1068px;
     background: #FFEAA7;
+    opacity: 50%;
     border-radius: 99px;
     top: -623px;
-    right: 570px;
     z-index: -1;
     transform: rotate(45deg);
-    top: -50%; /* change value as required */
-    right: -20%; /* change value as required */
+    top: -20%; /* change value as required */
+    right: 0%; /* change value as required */
 }
 #dots{
     position: absolute;
@@ -277,7 +277,7 @@ hr{
     z-index: -1;
 }
 #support{
-    width: 17%;
+    width: 270px;
     margin-top: 40px;
     
 }
@@ -296,7 +296,7 @@ hr{
     line-height: 32px;
 }
 #but2{
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -307,6 +307,26 @@ hr{
     width: 150px;
     height:45px;
     background-color: white;
-
 }
 
+#three{
+    /* padding-left: 250px; */
+    margin-top: 100px;
+}
+
+#three>h1{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 100%;
+}
+
+#three>h2{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: rgba(85, 85, 85, 0.336);
+}
