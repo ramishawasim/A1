@@ -329,4 +329,88 @@ hr{
     font-size: 32px;
     line-height: 48px;
     color: rgba(85, 85, 85, 0.336);
+    margin-bottom: 30px;
+}
+#plans{
+    /* margin-left: 250px; */
+    margin-top: 10px;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+#text1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #6C5CE7;
+}
+#text{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1px;
+}
+
+#item{
+    display: flex;
+    padding-top: 30px;
+    
+}
+#item>img{
+    width: 35px;
+    height: 35px;
+}
+
+#item>p{
+    margin-left: 10px;
+    margin-top: 2px;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+#free>button{
+    margin-top: 190px;
+    width: 100%;
+}
+
+#but3{
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    border-radius: 15px;
+    border: 0.5px solid #5c5c5e91;
+
+    width: 150px;
+    height:45px;
+    background-color: #6C5CE7;
+}
+
+#paid>button{
+    margin-top: 55px;
+    width: 100%;
+}
+#secpaid>button{
+    margin-top: 115px;
+    width: 100%;
+}
+#paid{
+    padding: 30px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+#free{
+    padding: 30px;
+}
+#secpaid{
+    padding: 30px;
 }
