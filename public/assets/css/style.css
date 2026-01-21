@@ -561,5 +561,14 @@ fieldset> ul>li> textarea:focus{
     background-image: url(../images/icon-user.png);
     background-repeat: no-repeat;
     background-position: right;
-    
+}
+#email{
+    background-image: url(../images/icon-mail.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#message{
+    background-image: url(../images/icon-edit.png);
+    background-repeat: no-repeat;
+    background-position: top right;
 }
