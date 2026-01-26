@@ -663,12 +663,14 @@ fieldset> ul>li> textarea:focus{
         line-height: 36px;
         display: flex;
         flex-wrap: wrap;
+        width: 80%;
     }
     #two>p{
         font-weight: 400;
         font-size: 18px;
         line-height: 32px;
         margin-top: 30px;
+        width: 80%;
     }
     #box{
         gap:10px;
@@ -709,5 +711,38 @@ fieldset> ul>li> textarea:focus{
     #plans{
         display: flex;
         flex-wrap: wrap;
+    }
+    #three>h1, #three>h2{
+        text-align: left;
+        margin-left: 20px;
+    }
+    #free{
+        padding: 30px;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        
+    }
+    #paid{
+        margin-top: -80px;
+    }
+    #secpaid{
+        padding: 30px;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        margin-top: -80px;
+        background-color: #6C5CE7;
+    }
+    #secpaid>h1{
+        color:#55EFC4;
+    }
+    #secpaid>ul>li>p{
+        color: #ffffff;
+    }
+    #secpaid>h2{
+        color: #ffffff;
+    }
+    #free>button{
+        color: white;
+        background-color: #6C5CE7;
     }
 }
