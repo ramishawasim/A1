@@ -595,7 +595,7 @@ fieldset> ul>li> textarea:focus{
     }
     #head{
         height: 150px;
-        width: 600px;
+        width: 100%;
 
         font-family: "Inter", sans-serif;
         font-weight: 700;
@@ -603,9 +603,9 @@ fieldset> ul>li> textarea:focus{
         line-height: 36px;
         letter-spacing: 0.25px;
         text-decoration: none;
-        gap: 200px;
+        /* gap: 200px; */
         justify-content:start;
-        
+       
     }
     #header>h1{
         margin-left: 20px;
@@ -618,14 +618,15 @@ fieldset> ul>li> textarea:focus{
         letter-spacing: 0.25px;
     }
     #header{
-        margin-left: -40px;
+        margin-left: -60px;
     }
     
     #buton{
         min-width: 180px;
         height: 55px;
         border-radius: 20px;
-        margin-right: 50px;
+        margin-right: 10px;
+        
 
         font-family: "Inter", sans-serif;
         font-weight: 700;
@@ -634,16 +635,15 @@ fieldset> ul>li> textarea:focus{
         letter-spacing: 0.2px;
     }
     html{
-       min-width: 600px;
+        min-width: 100%;
        
     }
-    #bg, #grid{
-        min-width: 100%;
-        overflow: hidden;
+   
+    #grid{
+        width: 50%;
+        margin-left: -100px;
     }
-    hr{
-        min-width: 600px;
-    }
+    
     #title >h2{
         font-family: "Inter", sans-serif;
         font-weight: 900;
@@ -651,9 +651,7 @@ fieldset> ul>li> textarea:focus{
         text-decoration: none;
         text-align: center;
     }
-    #title{
-        margin-left: -50px;
-    }
+   
     #two{
         padding-left: 10px;
         max-width: 600px;
@@ -707,5 +705,9 @@ fieldset> ul>li> textarea:focus{
     }
     #support{
         width: 200px;
+    }
+    #plans{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
