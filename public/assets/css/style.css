@@ -1,30 +1,33 @@
 #head{
+    /* give width and height */
     width: 100%;
     height: 90px;
+    /* font */
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
-
+    /* evenly space between items */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap:120px;
 }
 #navi{
+    /* give a gap between links */
     display: flex;
-    /* justify-content: space-between; */
-    /* text-decoration: none; */
     gap:40px;
     color: #6C5CE7;
 }
 a{
     text-decoration: none;
 }
+/* on hover change the anchor colour and font weight */
 a:hover{
     color: black;
     font-weight: 700;
 }
+/* edit header title text */
 #header{
     margin-left: 250px;
     font-size: 48px;
@@ -32,10 +35,10 @@ a:hover{
     display: flex;
     margin-top: 10px;
 }
-
 #header>h1{
     margin-top: 5px;
 }
+/* button formatting */
 #buton{
     width: 110px;
     height:45px;
@@ -46,9 +49,12 @@ a:hover{
     background-color: #6C5CE7;
     color: white;
 }
+/* give line under header a shadow */
 hr{
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
+/* first section */
+/* fix text formatting */
 #title>h2{
     font-family: "Inter", sans-serif;
     font-weight: 800;
@@ -67,6 +73,7 @@ hr{
 #title{
     margin-top: 120px;
 }
+/* add the rectangle in background */
 #bg {
     position: relative;
     overflow: hidden;
@@ -74,6 +81,7 @@ hr{
     margin-top: -5px;
     
 }
+/* create rectangle */
 #bg::after{
     content: '';
     position: absolute;
@@ -85,9 +93,10 @@ hr{
     top: -623px;
     z-index: -1;
     transform: rotate(45deg);
-    top: -20%; /* change value as required */
-    right: 0%; /* change value as required */
+    top: -20%; /* positioning */
+    right: 0%; /* positioning */
 }
+/* positioning background dot image */
 #dots{
     position: absolute;
     width: 209px;
@@ -95,18 +104,15 @@ hr{
     top: 20px;
     left: 1700px;
     overflow: hidden;
-   
 }
 #main{
     width: 100%;
     display: flex;
-  
 }
+/* grid formatting */
 #grid{
-    /* width: 100%; */
     height: auto;
     padding-top: 200px;
-    
 
     box-sizing: border-box;
     
@@ -128,14 +134,13 @@ hr{
 .galleryItem{
     overflow: hidden;
     position: relative;
-    /* border: 1px solid black; */
     border-radius: 10%;
 }
+/* assign items and fix specific item sizing */
 .galleryItem:nth-child(1){
     border-radius:0%;
     grid-area: img1;
 }
-
 .galleryItem:nth-child(2){
     grid-area: img2;
 }
@@ -171,32 +176,21 @@ hr{
     border-radius: 0%;
     grid-area: img10;
 }
-
-
 /* adjust image sizing  */
 .galleryItem >img {
-    /* width: 120%; */
-    /* width: auto; */
     height: 100%;
     transform-origin: center;
-    
-    
 }
-
 .galleryItem:nth-child(2)>img{
-    /* height: auto; */
     width: 100%;
     height: 120%;
-
 }
 .galleryItem:nth-child(7)>img{
-    /* height: auto; */
     width: 100%;
     height: 105%;
-
 }
-
-.galleryItem:nth-child(2) >h2{
+/* gallery text formatting */
+.galleryItem:nth-child(2)>h2{
     width: 100%;
     height:40px;
     position:absolute;
@@ -211,6 +205,7 @@ hr{
     color: rgba(255, 255, 255, 0);
     font-size: 18px;
 } 
+/* format button in grid */
 .galleryItem:nth-child(10)>button{
     width: 150px;
     height:45px;
@@ -219,19 +214,18 @@ hr{
     padding: 10px 30px;
     background-color: #6C5CE7;
     color: white;
-    
 }
 .galleryItem:nth-child(10){
     display: flex; 
     justify-content: center; 
     /* align-items: center; */
 }
+/* fix positioning of images inside the grid */
 .galleryItem:nth-child(5), .galleryItem:nth-child(6), .galleryItem:nth-child(4), .galleryItem:nth-child(9){
     display: flex; 
     justify-content: center; 
     align-items: center;
 }
-
 .galleryItem:nth-child(3), .galleryItem:nth-child(1) {
     display: flex; 
     justify-content: center; 
@@ -242,19 +236,17 @@ hr{
     font-size: 18px;
     line-height: 32px;
 }
-
+/* section two */
 #two{
     padding-left: 250px;
     margin-top: 100px;
 }
-
 #two>h1{
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
 }
-
 #two>p{
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -262,8 +254,7 @@ hr{
     line-height: 36px;
     width: 60%;
 }
-
-/* second part */
+/* keywords section */
 #box{
     display: flex;
     gap: 80px;
@@ -271,7 +262,6 @@ hr{
 #im{
     position: relative;
 }
-
 #first{
     position:absolute;
     
@@ -285,7 +275,6 @@ hr{
 #support{
     width: 270px;
     margin-top: 40px;
-    
 }
 #support>h2{
     margin-top: 20px;
@@ -314,12 +303,10 @@ hr{
     height:45px;
     background-color: white;
 }
-
+/* third section */
 #three{
-    /* padding-left: 250px; */
     margin-top: 100px;
 }
-
 #three>h1{
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -327,7 +314,6 @@ hr{
     font-size: 62px;
     line-height: 100%;
 }
-
 #three>h2{
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -337,14 +323,15 @@ hr{
     color: rgba(85, 85, 85, 0.336);
     margin-bottom: 30px;
 }
+/* different plans */
 #plans{
-    /* margin-left: 250px; */
+    /* make them flexible */
     margin-top: 10px;
     display: flex;
     gap: 150px;
     justify-content: center;
 }
-
+/* formatting for all plans */
 #text1{
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -360,17 +347,14 @@ hr{
     line-height: 56px;
     letter-spacing: -1px;
 }
-
 #item{
     display: flex;
     padding-top: 30px;
-    
 }
 #item>img{
     width: 35px;
     height: 35px;
 }
-
 #item>p{
     margin-left: 10px;
     margin-top: 2px;
@@ -381,12 +365,11 @@ hr{
     line-height: 32px;
     letter-spacing: 0px;
 }
-
+/* button formatting for each plan*/
 #free>button{
     margin-top: 190px;
     width: 100%;
 }
-
 #but3{
     margin-top: 20px;
     font-family: "Inter", sans-serif;
@@ -400,7 +383,6 @@ hr{
     height:45px;
     background-color: #6C5CE7;
 }
-
 #paid>button{
     margin-top: 55px;
     width: 100%;
@@ -409,18 +391,20 @@ hr{
     margin-top: 115px;
     width: 100%;
 }
+/* individual plan */
 #paid{
     padding: 30px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
+/* adding more space */
 #free{
     padding: 30px;
 }
 #secpaid{
     padding: 30px;
 }
-
+/* footer */
 footer{
     /* sizing */
     margin-top: 150px;
@@ -428,21 +412,19 @@ footer{
     height:550px;
     position: relative;
 }
-
 #footerimg{
+    /* make image stuck to the bottom of the website */
     position: absolute;
     bottom: 0;
     width: 100%;
     background-size: cover;
 }
-
+/* footer section */
 #contact{
     display: flex;
     margin-left: 250px;
     flex-wrap: wrap;
-   
 }
-
 #contact >div>h1{
     font-family: "Inter", sans-serif;
     font-weight: 800;
@@ -460,15 +442,17 @@ footer{
     letter-spacing: -0.5px;
     color: #6C5CE7;
 }
+/* make each div of footer 50% of the width of the website */
 #contact>div{
     width: 50%;
     margin-top: 40px;
 }
+/* first section of footer */
 #info{
     display: flex;
     flex-wrap: wrap;
 }
-
+/* second section of footer */
 #info>li{
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -482,12 +466,13 @@ footer{
 #info>li:hover{
     text-decoration: underline;
 }
-
+/* contact form */
 #firstName, #email{
     border: none;
     border-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 15px;
     width: 250px;
 
     background-color: #c2c2c241;
@@ -495,33 +480,23 @@ footer{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    
-   
-    padding-left: 15px;
-    
 }
-
 fieldset>ul{
     display: flex;
     flex-wrap: wrap; 
 }
-
 fieldset>ul>li{
     width: 300px;
 }
-
 #comment >textarea{
     /* so user does not resize textarea */
     resize: none;
 }
-
 fieldset> ul>li> textarea{
     width: 100%;
     height:70px;
     border: none;
     background-color: #c2c2c241;
-   
-
 
     border-radius: 15px;
     padding-top: 15px;
@@ -532,7 +507,7 @@ fieldset> ul>li> textarea{
     font-weight: 400;
     font-size: 18px;
 }
-
+/* submit button */
 #submit{
     width: 225px;
     height: 95px;
@@ -543,26 +518,21 @@ fieldset> ul>li> textarea{
     font-weight: 700;
     font-size: 24px;
     
-   
-   
     border: none;
     border-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #6C5CE7;
-
     color: white;
 }
-
+/* when on focus */
 #firstName:focus, #email:focus{
     border: 1px solid #6C5CE7;
     color: #6C5CE7;
 }
-
 fieldset> ul>li> textarea:focus{
     color: #6C5CE7;
 }
-
 #firstName{
     background-image: url(../images/icon-user.png);
     background-repeat: no-repeat;
@@ -578,21 +548,45 @@ fieldset> ul>li> textarea:focus{
     background-repeat: no-repeat;
     background-position: top right;
 }
+/* footer image at the bottom hidden for web */
 #mobileImg{
     visibility: hidden;
 }
-
-/* mobile */
+/* hide mobile footer from web */
+#mobilefoot{
+    display: none;
+}
+/* mobile responsive*/
 @media (max-width:600px){
+    /* fix position of background images to fit into web */
+    #dots{
+        top: 20px;
+        left: 220px;
+    }
+    /* fixing the rectangle size */
+    #bg::after{
+        width: 776px;
+        height: 868px;
+        
+        top: -623px;
+        z-index: -1;
+        transform: rotate(45deg);
+        top: -20%;
+        right: -80%; 
+    }
+    /* make header mobile image visible */
     #mobileImg{
         visibility: visible;
     }
+    /* hide web header image version */
     #webImg{
         visibility: hidden;
     }
+    /* hide header hyperlinks navigation */
     #navi{
         display: none;
     }
+    /* header sizing */
     #head{
         height: 150px;
         width: 100%;
@@ -603,10 +597,9 @@ fieldset> ul>li> textarea:focus{
         line-height: 36px;
         letter-spacing: 0.25px;
         text-decoration: none;
-        /* gap: 200px; */
         justify-content:start;
-       
     }
+    /* adjust font sizing */
     #header>h1{
         margin-left: 20px;
         margin-top: 10px;
@@ -620,7 +613,7 @@ fieldset> ul>li> textarea:focus{
     #header{
         margin-left: -60px;
     }
-    
+    /* header button sizing */
     #buton{
         min-width: 180px;
         height: 55px;
@@ -636,26 +629,29 @@ fieldset> ul>li> textarea:focus{
     }
     html{
         min-width: 100%;
-       
     }
-   
+    /* grid sizing to fit inside mobile version */
     #grid{
         width: 50%;
-        margin-left: -100px;
+        margin-left: -50px;
+        /* resize the sizes of the grid template */
+        grid-template-columns: repeat(3, 150px) 100px 100px;
+        grid-template-rows: 50px repeat(3, 150px);
+        margin-left: 50px;
     }
-    
-    #title >h2{
+    #title>h2{
         font-family: "Inter", sans-serif;
         font-weight: 900;
         font-size: 64px;
         text-decoration: none;
         text-align: center;
     }
-   
+    /* second section */
     #two{
         padding-left: 10px;
         max-width: 600px;
     }
+    /* fixing font sizing */
     #two>h1{
         font-family: "Inter", sans-serif;
         font-weight: 700;
@@ -672,11 +668,11 @@ fieldset> ul>li> textarea:focus{
         margin-top: 30px;
         width: 80%;
     }
+    /* keyword section fix display, make flexible */
     #box{
         gap:10px;
         display: flex;
         flex-wrap: wrap;
-   
     }
     #support>h2{
         margin-top: 20px;
@@ -692,6 +688,7 @@ fieldset> ul>li> textarea:focus{
         font-size: 13.5px;
         line-height: 24px;
     }
+    /* button formatting for keywords */
     #but2{
         margin-top: 20px;
         font-family: "Inter", sans-serif;
@@ -708,6 +705,7 @@ fieldset> ul>li> textarea:focus{
     #support{
         width: 200px;
     }
+    /* third section */
     #plans{
         display: flex;
         flex-wrap: wrap;
@@ -716,15 +714,17 @@ fieldset> ul>li> textarea:focus{
         text-align: left;
         margin-left: 20px;
     }
+    /* free plan */
     #free{
         padding: 30px;
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
-        
     }
+    /* individual plan */
     #paid{
         margin-top: -80px;
     }
+    /* corporate plan */
     #secpaid{
         padding: 30px;
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
@@ -732,6 +732,7 @@ fieldset> ul>li> textarea:focus{
         margin-top: -80px;
         background-color: #6C5CE7;
     }
+    /* change text formatting and colour for corporate plan */
     #secpaid>h1{
         color:#55EFC4;
     }
@@ -741,8 +742,62 @@ fieldset> ul>li> textarea:focus{
     #secpaid>h2{
         color: #ffffff;
     }
+    /* fix buttons for each plan */
     #free>button{
         color: white;
         background-color: #6C5CE7;
+    }
+    /* remove contact section */
+    #contact{
+        display: none;
+    }
+    /* make footer content visible */
+    #mobilefoot{
+        display: contents;
+        text-align: center;
+
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    /* resize footer */
+    footer{
+        max-height: 200px;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+    /* add content formatting for mobile footer */
+    #green{
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        color: #00B894;
+        margin-top: 20px;
+    }
+    #website{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        color: #6C5CE7;
+        margin-top: 20px;
+    }
+    #mobilefoot>img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    /* remove image at the bottom */
+    #footerimg{
+        display: none;
+    }
+    /* remove the text from the grid */
+    .galleryItem:nth-child(3){
+        visibility: hidden;
     }
 }
